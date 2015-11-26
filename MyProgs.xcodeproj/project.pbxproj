@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A040C2E01BC04F9D00CF6B61 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A040C2DF1BC04F9D00CF6B61 /* main.cpp */; };
+		A0803C521BC8E626005AC65E /* nstairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0803C501BC8E626005AC65E /* nstairs.cpp */; settings = {ASSET_TAGS = (); }; };
+		A0803C551BC8F149005AC65E /* TreeProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0803C531BC8F149005AC65E /* TreeProgram.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		A040C2DC1BC04F9D00CF6B61 /* MyProgs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyProgs; sourceTree = BUILT_PRODUCTS_DIR; };
 		A040C2DF1BC04F9D00CF6B61 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A0803C501BC8E626005AC65E /* nstairs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nstairs.cpp; sourceTree = "<group>"; };
+		A0803C511BC8E626005AC65E /* nstairs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = nstairs.hpp; sourceTree = "<group>"; };
+		A0803C531BC8F149005AC65E /* TreeProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeProgram.cpp; sourceTree = "<group>"; };
+		A0803C541BC8F149005AC65E /* TreeProgram.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TreeProgram.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				A040C2DF1BC04F9D00CF6B61 /* main.cpp */,
+				A0803C501BC8E626005AC65E /* nstairs.cpp */,
+				A0803C511BC8E626005AC65E /* nstairs.hpp */,
+				A0803C531BC8F149005AC65E /* TreeProgram.cpp */,
+				A0803C541BC8F149005AC65E /* TreeProgram.hpp */,
 			);
 			path = MyProgs;
 			sourceTree = "<group>";
@@ -97,7 +107,7 @@
 				};
 			};
 			buildConfigurationList = A040C2D71BC04F9D00CF6B61 /* Build configuration list for PBXProject "MyProgs" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0803C521BC8E626005AC65E /* nstairs.cpp in Sources */,
 				A040C2E01BC04F9D00CF6B61 /* main.cpp in Sources */,
+				A0803C551BC8F149005AC65E /* TreeProgram.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +217,13 @@
 		A040C2E41BC04F9D00CF6B61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/boost/1.58.0/include/**";
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.58.0/lib/;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +231,13 @@
 		A040C2E51BC04F9D00CF6B61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/boost/1.58.0/include/**";
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.58.0/lib/;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -235,6 +261,7 @@
 				A040C2E51BC04F9D00CF6B61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
