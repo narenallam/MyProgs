@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A040C2E01BC04F9D00CF6B61 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A040C2DF1BC04F9D00CF6B61 /* main.cpp */; };
-		A0803C521BC8E626005AC65E /* nstairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0803C501BC8E626005AC65E /* nstairs.cpp */; settings = {ASSET_TAGS = (); }; };
-		A0803C551BC8F149005AC65E /* TreeProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0803C531BC8F149005AC65E /* TreeProgram.cpp */; settings = {ASSET_TAGS = (); }; };
+		A0803C521BC8E626005AC65E /* nstairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0803C501BC8E626005AC65E /* nstairs.cpp */; };
+		A0803C551BC8F149005AC65E /* TreeProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0803C531BC8F149005AC65E /* TreeProgram.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -98,7 +98,7 @@
 		A040C2D41BC04F9D00CF6B61 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Narendra A";
 				TargetAttributes = {
 					A040C2DB1BC04F9D00CF6B61 = {
@@ -218,7 +218,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				GCC_C_LANGUAGE_STANDARD = c11;
 				HEADER_SEARCH_PATHS = "/usr/local/Cellar/boost/1.58.0/include/**";
@@ -232,7 +231,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				GCC_C_LANGUAGE_STANDARD = c11;
 				HEADER_SEARCH_PATHS = "/usr/local/Cellar/boost/1.58.0/include/**";

@@ -17,7 +17,7 @@ using namespace std;
 namespace BSTree {
     
     void Tree::insertNode(uint64_t data){
-        shared_ptr<Node> temp = make_shared<Node>(data);
+        shared_ptr<Node> temp = make_shared<Node(data);
         shared_ptr<Node> rt = nullptr;
         shared_ptr<Node> prev = nullptr;
         temp->nodeCount = 1;
